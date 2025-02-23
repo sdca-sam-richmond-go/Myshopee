@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-image: url('https://i.pinimg.com/originals/d8/f9/e9/d8f9e95510ff68dad39a171580584ae2.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #66e0ff;
+}
+
+header {
+    background-color: rgba(10, 15, 40, 0.9);
+    color: #ff66b2;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: rgba(27, 31, 94, 0.8);
+    border: 1px solid rgba(102, 224, 255, 0.7);
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(102, 224, 255, 0.5);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #fbc02d;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #66e0ff;
+    font-weight: bold;
+}
+
+.product .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6d00;
+    margin-top: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product .btn {
+    background-color: #d81b60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.product .btn:hover {
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #66e0ff;
+}
+
+
+.slider {
+    position: relative;
+    width: 60%; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;  
+    transition: 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px; 
+    object-fit: contain; 
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
